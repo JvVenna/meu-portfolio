@@ -1,7 +1,12 @@
 .content_home {
     /* cursor: pointer; */
+    overflow: hidden;
     height: 100vh;
     background: radial-gradient(#5862BD 0%, #222222 100%);
+}
+
+body {
+    overflow: hidden;
 }
 
 .demo {
@@ -121,7 +126,7 @@
 }
 
 .title {
-    font-size: 90px !important;
+    font-size: 90px;
     font-family: sans-serif;
     font-weight: black;
     animation: blink-text 1s ease-in-out;
@@ -164,10 +169,41 @@
     /* padding: 0 2px; */
     transition: 0.5s;
 }
+
 /* .subt  */
 
 .hello:active {
     animation: react infinite 0.5s linear;
+}
+
+@media(max-width:690px) {
+    p.title {
+        font-size: 65px;
+    }
+
+    .title_2 {
+        font-size: 80px;
+    }
+}
+
+@media(max-width:500px) {
+    p.title {
+        font-size: 50px;
+    }
+
+    .title_2 {
+        font-size: 60px;
+    }
+}
+
+@media(max-width:370px) {
+    p.title {
+        font-size: 40px;
+    }
+
+    .title_2 {
+        font-size: 50px;
+    }
 }
 
 /* ---------------------------keyframes-------------------------- */
@@ -267,8 +303,9 @@
 
 @keyframes subtitle {
     0% {
-      color: unset;
+        color: unset;
     }
+
     50% {
         color: black;
     }
