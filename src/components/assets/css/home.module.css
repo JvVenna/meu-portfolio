@@ -196,7 +196,7 @@ body {
     }
 }
 
-@media(max-width:370px) {
+@media(max-width:380px) {
     p.title {
         font-size: 40px;
     }
