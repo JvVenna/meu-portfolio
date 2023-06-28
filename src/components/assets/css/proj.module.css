@@ -20,7 +20,7 @@
 }
 
 .content_projetos {
-    background: linear-gradient(rgba(234, 191, 250, 0.8)0%, rgba(243, 255, 197, 0.5) 50%);
+    background: linear-gradient(rgba(234, 191, 250, 1)0%, rgba(243, 255, 197, 1) 50%);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
