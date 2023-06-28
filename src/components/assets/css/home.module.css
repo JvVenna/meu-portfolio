@@ -164,13 +164,7 @@
     /* padding: 0 2px; */
     transition: 0.5s;
 }
-.subtitle:active {
-animation: subtitle 1s linear infinite;
-}
-
-.title_2:active {
-    animation: increaseText 2s infinite linear;
-}
+/* .subt  */
 
 .hello:active {
     animation: react infinite 0.5s linear;
