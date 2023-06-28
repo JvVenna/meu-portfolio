@@ -130,6 +130,10 @@
         margin-right: var(--phone-align-phone);
     }
 
+    .tablet:hover, .phone:hover {
+        scale: unset;
+    }
+
     .proj1 {
         align-items: center;
     }
