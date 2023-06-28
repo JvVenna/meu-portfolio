@@ -1,0 +1,382 @@
+.content_home {
+    /* cursor: pointer; */
+    height: 100vh;
+    background: radial-gradient(#5862BD 0%, #222222 100%);
+}
+
+.demo {
+    color: white;
+}
+
+/* .content_home:active {
+    animation: background 1s ease-in-out alternate-reverse forwards infinite;
+} */
+
+/* ---------------------------icones-------------------------- */
+.icons_ul {
+    top: 15px;
+    right: 10px;
+    position: absolute;
+    list-style: none;
+    z-index: 10;
+    color: lightgray;
+    line-height: 50px;
+    animation: icones 3s linear;
+}
+
+.icons {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+.icons_html {
+    animation: increaseIcons ease-in-out 1s 1, colorHtml 1s ease-in-out 1;
+    animation-delay: 5s, 6s;
+}
+
+.icons_css {
+    animation: increaseIcons ease-in-out 1s 1, colorCss 1s ease-in-out 1;
+    animation-delay: 5s, 6.5s;
+}
+
+.icons_js {
+    animation: increaseIcons ease-in-out 1s 1, colorJs 1s ease-in-out 1;
+    animation-delay: 5s, 7s;
+}
+
+.icons_react {
+    animation: increaseIcons 1s 1, colorReact 1s ease 1, react linear infinite 4s;
+    animation-delay: 5s, 7.5s, 8.5s;
+}
+
+.icons:hover {
+    scale: 1.2;
+    transition: 0.5s;
+}
+
+.icons_html:hover {
+    color: rgb(236, 98, 49);
+}
+
+.icons_css:hover {
+    color: dodgerblue;
+}
+
+.icons_js:hover {
+    color: rgb(240, 219, 79);
+}
+
+.icons_react:hover {
+    animation: react 0;
+    color: rgb(97, 219, 251);
+}
+
+.icons_html:active {
+    animation: react linear infinite 1s;
+}
+
+.icons_css:active {
+    animation: react linear infinite 1s;
+}
+
+.icons_js:active {
+    animation: react linear infinite 1s;
+}
+
+.icons_react:active {
+    animation: react linear infinite 1s;
+}
+
+/* ---------------------------texto-central-------------------------- */
+
+.content_center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.subtitle {
+    color: lightgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    animation: blink-text 1s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.hello {
+    animation: increaseIcons 0.8s linear, hello 0.5s linear 3;
+    animation-delay: 2.7s, 3.5s;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 90px !important;
+    font-family: sans-serif;
+    font-weight: black;
+    animation: blink-text 1s ease-in-out;
+    animation-delay: 1.5s;
+    z-index: 10;
+}
+
+.title_2 {
+    font-size: 110px;
+    font-family: sans-serif;
+    font-weight: 600;
+    animation: blink-text 1s ease-in-out;
+    animation-delay: 1.7s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.title_2:hover .title {
+    transform: translateX(-10px);
+    transition: 1s;
+    animation: title 1s linear;
+    animation-delay: 1s;
+}
+
+.title_2:hover {
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+    transition: 1s;
+}
+
+.subtitle:hover {
+    cursor: pointer;
+    animation: title2 1s linear;
+    animation-delay: 0.2s;
+}
+
+.hello:hover {
+    animation: hello 0.5s linear infinite;
+    animation-delay: 1s;
+    scale: 1.2;
+    /* padding: 0 2px; */
+    transition: 0.5s;
+}
+.subtitle:active {
+animation: subtitle 1s linear infinite;
+}
+
+.title_2:active {
+    animation: increaseText 2s infinite linear;
+}
+
+.hello:active {
+    animation: react infinite 0.5s linear;
+}
+
+/* ---------------------------keyframes-------------------------- */
+
+@keyframes icones {
+    0% {
+        opacity: 0;
+        right: -3em;
+    }
+
+    100% {
+        opacity: 1;
+        right: 10px;
+    }
+}
+
+@keyframes colorHtml {
+    0% {
+        color: lightgray;
+    }
+
+    50% {
+        color: rgb(236, 98, 49);
+    }
+
+    100% {
+        color: lightgray;
+    }
+}
+
+@keyframes colorCss {
+    0% {
+        color: lightgray;
+    }
+
+    50% {
+        color: dodgerblue;
+    }
+
+    100% {
+        color: lightgray;
+    }
+}
+
+@keyframes colorJs {
+    0% {
+        color: lightgray;
+    }
+
+    50% {
+        color: rgb(240, 219, 79);
+    }
+
+    100% {
+        color: lightgray;
+    }
+}
+
+@keyframes colorReact {
+    0% {
+        color: lightgray;
+    }
+
+    50% {
+        color: rgb(97, 219, 251);
+    }
+
+    100% {
+        color: lightgray;
+    }
+}
+
+
+@keyframes increaseIcons {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.3;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes react {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes subtitle {
+    0% {
+      color: unset;
+    }
+    50% {
+        color: black;
+    }
+
+    100% {
+        color: unset;
+    }
+}
+
+@keyframes hello {
+    0% {
+        transform: rotate(0deg);
+        /* transform: rotate3d(1, 1, 1, 45deg); */
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes title {
+    0% {
+        color: unset;
+    }
+
+    50% {
+        color: black;
+    }
+
+    100% {
+        color: unset;
+    }
+}
+
+@keyframes title2 {
+    0% {
+        color: lightgray;
+    }
+
+    50% {
+        color: white;
+    }
+
+    100% {
+        color: lightgray;
+    }
+}
+
+
+@keyframes increaseText {
+    0% {
+        border-bottom: unset solid;
+    }
+
+    50% {
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+
+    100% {
+        border-bottom: unset solid;
+    }
+}
+
+/* @keyframes background {
+    0% {
+        background: radial-gradient(unset, unset);
+    }
+
+    25% {
+        background: radial-gradient(#5862BD 0%, #222222 90%);
+    }
+
+    50% {
+        background: radial-gradient(#5862BD 0%, #222222 80%);
+
+    }
+
+    75% {
+        background: radial-gradient(#5862BD 0%, #222222 90%);
+
+    }
+
+    100% {
+        background: radial-gradient(unset, unset);
+
+    }
+} */
+
+@keyframes blink-text {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
