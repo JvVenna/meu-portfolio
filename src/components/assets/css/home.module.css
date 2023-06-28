@@ -251,7 +251,7 @@ animation-delay: 1s;
         position: fixed;
         bottom: 10px;
         left: 10px;
-        transition: 0s step-end;
+        /* transition: 0s step-end; */
         z-index: 20;
     }
 }
