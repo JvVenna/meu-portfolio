@@ -1,5 +1,7 @@
 import styles from "./assets/css/home.module.css";
-import { FaCss3, FaHtml5, FaJs, FaReact } from 'react-icons/fa'
+import divisaoPagina from "./assets/img/divisao-pagina.png";
+import { FaCss3, FaGithub, FaHtml5, FaJs, FaLinkedin, FaReact } from 'react-icons/fa'
+import { MdEmail } from 'react-icons/md'
 
 function Home() {
 
@@ -47,11 +49,18 @@ function Home() {
                     <div className={styles.align}>
                         <h2 className={styles.subtitle}>Prazer <div className={styles.hello}>👋</div> João, eu sou</h2>
                         <p className={styles.title_2}>
-                            <p className={styles.title}>FRONTEND </p>
+                            <p className={styles.title}>FRONTEND
+                                <section className={styles.iconsTitle}>
+                                <a href="https://github.com/JvVenna?tab=repositories" target="_blank" rel="noreferrer"><FaGithub className={styles.github} /></a>
+                                <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-ven%C3%A2ncio-116092245/" target="_blank" rel="noreferrer"><FaLinkedin className={styles.linkedin} /></a>
+                                <a href="mailto:jv.venna@gmail.com?subject=&body=" target="_blank" rel="noreferrer"><MdEmail className={styles.email} /></a>
+                                </section>
+                            </p>
                             DEVELOPER</p>
                     </div>
                 </div>
             </div>
+            <img className={styles.divisao} src={divisaoPagina} alt="divisao" />
         </>
     )
 }

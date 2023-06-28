@@ -1,0 +1,114 @@
+:root {
+    --logo-height: 40px;
+    --icons-footer: 35px;
+}
+
+footer {
+    background: rgba(243, 255, 197, 1);
+    padding: 20px 0;
+}
+
+.border {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 15px;
+    color: gray;
+    border-top: 1px solid lightgray;
+    margin: 0 100px;
+    padding-top: 20px;
+}
+
+footer div div {
+    display: flex;
+    align-items: flex-end;
+}
+
+footer div div a {
+    height: var(--icons-footer);
+}
+
+footer div div img {
+    width: var(--icons-footer);
+}
+
+.iconsGithub, .iconsLinkedin {
+    height: var(--icons-footer);
+    width: fit-content;
+    color: gray;
+}
+
+.iconsLinkedin {
+    margin: 0 30px;
+}
+
+.iconsGithub:hover, .iconsLinkedin:hover, footer div div img:hover {
+    scale: 1.2;
+    transition: all 0.2s;
+}
+
+.iconsGithub:hover {
+    color: black;
+}
+
+.iconsLinkedin:hover {
+    color: dodgerblue;
+}
+
+.textFooter, h2 {
+    display: flex;
+    align-items: center;
+}
+
+.textFooter h2 h2 {
+    display: flex;
+    align-items: center;
+}
+
+.logoFooter {
+    width: var(--logo-height);
+    margin-left: 5px;
+}
+
+.logoFooter:active, .iconsGithub:active, .iconsLinkedin:active, footer div div img:active {
+    animation: react 1s linear infinite;
+}
+
+@media (max-width:1024px) {
+    .border {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    footer div div {
+        padding: 10px 0 25px 0;
+    }
+
+    .textFooter {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+
+@media (max-width:500px) {
+    .textFooter {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@keyframes react {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
