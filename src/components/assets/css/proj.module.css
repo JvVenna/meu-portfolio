@@ -108,12 +108,14 @@
 
 .title {
     padding: 20px 0;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .text {
     text-align: center;
     width: 50%;
     padding-bottom: 20px;
+    color: black;
 }
 
 /* ---------------------------media-------------------------- */
