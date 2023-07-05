@@ -6,7 +6,6 @@ import tabletVirado from './assets/img/tabletVirado.png';
 import phonePrintIntegral from './assets/img/print_phone.png';
 import tabletPrintIntegral from './assets/img/print_tablet.png';
 import tabletPrintPhp from './assets/img/formularioPhp.png';
-
 function Projetos() {
 
     const altPhone = "imagem celular"
@@ -23,7 +22,7 @@ function Projetos() {
     const textoPhp = "Projeto de formulário completo feito em PHP para TCC"
 
     return (
-        <>
+        <div className={styles.bakground}>
             <div className={styles.content_projetos}>
                 <Projeto phone={phone} altPhone={altPhone}
                     phonePrint={phonePrintIntegral} altPhonePrint={altPhonePrint}
@@ -36,7 +35,8 @@ function Projetos() {
                     tabletPrint={tabletPrintPhp} altTabletPrint={altTabletPrint}
                     link={urlPhp} titulo={tituloPhp} texto={textoPhp} />
             </div>
-        </>
+            <a className={styles.knowmore} target='_blank' href="https://joaodinamico.netlify.app/">+ projetos dinâmicos</a>
+        </div >
     )
 }
 
