@@ -1,6 +1,6 @@
 import { FaCss3, FaGithub, FaHtml5, FaJs, FaLinkedin, FaReact } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
-import { CgShapeTriangle } from 'react-icons/cg'
+// import { CgShapeTriangle } from 'react-icons/cg'
 import styles from "./assets/css/home.module.css";
 import divisaoPagina from "./assets/img/divisao-pagina.png";
 
@@ -58,7 +58,11 @@ function Home() {
                                 <a href="mailto:jv.venna@gmail.com?subject=&body=" target="_blank" rel="noreferrer"><MdEmail className={styles.email} /></a>
                             </section>
                         </p>
-                        DEVELOPER</p>
+                        DEVELOPER<label className={styles.version}>
+                            <a target='_blank' className={styles.version_a} href="https://victorworks.netlify.app">
+                                2.0
+                            </a>
+                        </label></p>
                 </div>
             </div>
             <img className={styles.divisao} src={divisaoPagina} alt="divisao" />
