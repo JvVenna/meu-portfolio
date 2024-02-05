@@ -35,7 +35,7 @@ function Projetos() {
                     tabletPrint={tabletPrintPhp} altTabletPrint={altTabletPrint}
                     link={urlPhp} titulo={tituloPhp} texto={textoPhp} />
             </div>
-            <a className={styles.knowmore} target='_blank' href="https://joaodinamico.netlify.app/">+ projetos dinâmicos</a>
+            <a className={styles.knowmore} target='_blank' rel='noreferrer' href="https://exdinamicos.netlify.app">projetos dinâmicos</a>
         </div >
     )
 }
