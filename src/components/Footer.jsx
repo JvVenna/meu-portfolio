@@ -17,7 +17,7 @@ function Footer() {
                 <div className={styles.textFooter}>
                     <h2>Copyright© 2023 |</h2>
                     <h2> Powered by
-                        <a href="https://joao01.netlify.app/">
+                        <a href="#">
                             <img className={styles.logoFooter} src={logo} alt="logo" />
                         </a>
                     </h2>
